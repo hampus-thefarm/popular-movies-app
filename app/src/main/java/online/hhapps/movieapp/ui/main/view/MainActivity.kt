@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
                     Status.SUCCESS -> {
                         recyclerViewPopularMovies.visibility = View.VISIBLE
                         progressBarPopularMovies.visibility = View.GONE
-                        resource.data?.results?.let { popularMovies -> retrieveList(popularMovies.take(10)) }
+                        resource.data?.results?.let { popularMovies -> addPopularMovies(popularMovies.take(10)) }
                     }
                     Status.ERROR -> {
                         recyclerViewPopularMovies.visibility = View.VISIBLE
@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
-    private fun retrieveList(popularMovies: List<PopularMovie>) {
+    private fun addPopularMovies(popularMovies: List<PopularMovie>) {
         adapter.apply {
             addPopularMovies(popularMovies)
             notifyDataSetChanged()
