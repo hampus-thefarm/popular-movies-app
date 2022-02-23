@@ -15,5 +15,5 @@ Jag skapade också en `Interceptor` som skickar med Bearer token i alla requests
 
 Om något går fel med requesten så visas en Toast med felmeddelandet.
 
-Eftersom att uppgiften gick ut på att plocka hem dem 10 populäraste filmerna och api:et returnerade fler än 10 filmer, så körde jag `.take(10)` på responsen
+Eftersom att uppgiften gick ut på att plocka hem dem 10 populäraste filmerna och api:et returnerade fler än 10 filmer, så körde jag `.take(10)` på responsen.
 
