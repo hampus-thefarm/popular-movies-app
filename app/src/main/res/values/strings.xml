@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Movie app</string>
+    <string name="popular_movies_activity_title">Popular movies</string>
+    <string name="movie_details_genre_header">Genres</string>
+    <string name="movie_details_spoken_languages_header">Spoken languages</string>
+    <string name="movie_details_production_companies_header">Production companies</string>
+</resources>
